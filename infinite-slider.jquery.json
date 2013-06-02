@@ -1,0 +1,27 @@
+{
+  "name": "infinite-slider",
+  "title": "Infinite Slider",
+  "description": "Do you want make a slider with some elements? Infinite loop is what you want. The elements don't need be images. Could be just items of something, like a bunch of text.",
+  "version": "0.1.0",
+  "homepage": "https://github.com/helielson/infinite-slider",
+  "author": {
+    "name": "Helielson",
+    "email": "contato@helielson.com",
+    "url": "helielson.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helielson/infinite-slider.git"
+  },
+  "bugs": "https://github.com/helielson/infinite-slider/issues",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/helielson/infinite-slider/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "~1.7"
+  },
+  "keywords": []
+}

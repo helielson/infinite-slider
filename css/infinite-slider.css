@@ -1,0 +1,19 @@
+.controls {
+    position: absolute;
+    right: 5px;
+    bottom: 0;
+}
+
+.control-item {
+    background: #AAA;
+    border-radius: 5px;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+.control-item.active {
+    background-color: #a00;
+}

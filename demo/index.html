@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../src/infinite-slider.js"></script>
+    <link rel="stylesheet" href="../css/infinite-slider.css">
+    <script>
+        jQuery(function($) {
+          $('.wrapper').infiniteSlider();
+        });
+    </script>
+    <style>
+        .container {
+            margin: 0 auto;
+            width: 400px;
+        }
+        .item {
+            border: 1px solid #CCC;
+            padding: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="item">
+                1. Something here
+            </div>
+            <div class="item">
+                2. Something here
+            </div>
+            <div class="item">
+                3. Something here
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
