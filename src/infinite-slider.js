@@ -84,12 +84,12 @@
         bindEvents: function() {
             if (this.$items.length > 1) {
 
-                var $allItems = $('.all-items');
+                var $allItems = $('.all-items', this.$element);
                 var _this = this;
-                $('.controls div').on('click', function() {
+                $('.controls div', this.$element).on('click', function() {
                     var idx = parseInt($(this).data('idx'), 10),
                         left = idx * _this.elementWidth;
-                        $('.controls div').removeClass('active').eq(idx).addClass("active");
+                        $('.controls div', _this.$element).removeClass('active').eq(idx).addClass("active");
 
                     $allItems.stop().animate({
                         'margin-left' : -left

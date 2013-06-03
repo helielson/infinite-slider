@@ -1,4 +1,4 @@
-/*! Infinite Slider - v0.1.0 - 2013-06-02
+/*! Infinite Slider - v0.1.0 - 2013-06-03
 * https://github.com/helielson/infinite-slider
 * Copyright (c) 2013 Helielson; Licensed MIT */
 ;(function ( $, window, document, undefined ) {
@@ -79,12 +79,12 @@
         bindEvents: function() {
             if (this.$items.length > 1) {
 
-                var $allItems = $('.all-items');
+                var $allItems = $('.all-items', this.$element);
                 var _this = this;
-                $('.controls div').on('click', function() {
+                $('.controls div', this.$element).on('click', function() {
                     var idx = parseInt($(this).data('idx'), 10),
                         left = idx * _this.elementWidth;
-                        $('.controls div').removeClass('active').eq(idx).addClass("active");
+                        $('.controls div', _this.$element).removeClass('active').eq(idx).addClass("active");
 
                     $allItems.stop().animate({
                         'margin-left' : -left
