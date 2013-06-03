@@ -79,10 +79,6 @@
         bindEvents: function() {
             if (this.$items.length > 1) {
 
-                // FAZER ISSO ANTES DO ANIMATE "BACK"
-                // this.$items.eq(0).before(this.$items.eq(-1));
-                // var $allItems = $('.all-items').css('margin-left', - this.elementWidth);
-
                 var $allItems = $('.all-items');
                 var _this = this;
                 $('.controls div').on('click', function() {
@@ -94,54 +90,6 @@
                         'margin-left' : -left
                   }, 1000);
                 });
-
-                // var $sliderWrapper = $('.slide-images'),
-                //     SLIDER_WIDTH = parseInt($sliderWrapper.width()),
-                //     SLIDE_MASK_WIDTH = 940;
-
-                // $('.prev, .next', '.slider .controls').on('click', function() {
-                //     var direction = this.className,
-                //         marginLeft = parseInt($sliderWrapper.css('margin-left')) || 0;
-
-                //     if (direction == 'next') {
-                //         // Ensures that there's a next image by putting the first image after the last
-                //         $('.slide-images a:last').after($('.slide-images a:first'));
-
-                //         $sliderWrapper.css('margin-left', 0).stop().animate({
-                //             'margin-left' : SLIDE_MASK_WIDTH * (-1)
-                //         });
-                //     }
-                //     else {
-                //       // The 'setup' of this function ensures that always there's a previous image.
-                //       // So, we can do the animation.
-                //       $sliderWrapper.stop().animate({
-                //           'margin-left' : 0
-                //       }, 500, function() {
-                //           $('.slide-images a:first').before($('.slide-images a:last'));
-                //           $sliderWrapper.css('margin-left', SLIDE_MASK_WIDTH * (-1) + 'px');
-                //       });
-                //     }
-                //     return false;
-                // });
-
-                // // The infinite loop to rotate images
-                // NAMESPACE.rotate = function() {
-                //     $('.next', '.slider .controls').click();
-                // }
-                // NAMESPACE.run = setInterval('NAMESPACE.rotate()', NAMESPACE.GLOBAL_SLIDE_TIMEOUT);
-
-                // //if mouse hover, pause the auto rotation, otherwise rotate it
-                // $('.slider .controls, .slider li').hover(
-                //     function() {
-                //         NAMESPACE.run && clearInterval(NAMESPACE.run);
-                //     },
-                //     function(e) {
-                //         // Ensures that the mouse isn't hover any slider element
-                //         if ($(e.relatedTarget).closest('.controls').length || $(e.relatedTarget).closest('.slide-mask').length)
-                //             return;
-                //         NAMESPACE.run = setInterval('NAMESPACE.rotate()', NAMESPACE.GLOBAL_SLIDE_TIMEOUT);
-                //     }
-                // );
 
             }
         }
