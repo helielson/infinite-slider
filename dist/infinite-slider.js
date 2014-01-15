@@ -1,6 +1,6 @@
-/*! Infinite Slider - v0.1.0 - 2013-06-03
+/*! Infinite Slider - v0.1.0 - 2014-01-14
 * https://github.com/helielson/infinite-slider
-* Copyright (c) 2013 Helielson; Licensed MIT */
+* Copyright (c) 2014 Helielson; Licensed MIT */
 ;(function ( $, window, document, undefined ) {
 
     "use strict";
@@ -60,6 +60,9 @@
          * Returns the html of the controls
          */
         getDotsControls: function(size) {
+            if (size <= 1) {
+                return "";
+            }
             var dotsHTML = "";
             var isActive = true;
             for (var idx=0; idx < size; idx++) {

@@ -65,6 +65,9 @@
          * Returns the html of the controls
          */
         getDotsControls: function(size) {
+            if (size <= 1) {
+                return "";
+            }
             var dotsHTML = "";
             var isActive = true;
             for (var idx=0; idx < size; idx++) {
